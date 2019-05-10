@@ -73,6 +73,13 @@ img {
   border-radius: 0.8rem;
 }
 
+.section-heading h1::after {
+  width: 1.5rem;
+  height: 1.5px;
+  border-radius: 100%;
+  bottom: -1rem;
+}
+
 .section-heading h6 {
   font-size: 1.6rem;
   font-weight: 300;
@@ -201,6 +208,7 @@ li {
   font-size: 2rem;
   font-weight: 300;
 }
+
 /*End header*/
 
 /*Start about*/
@@ -248,21 +256,87 @@ li {
 .fa-facebook-square:hover {
   color: #4267b2;
 }
+
 .fa-twitter-square:hover {
   color: #38a1f3;
 }
+
 .fa-github-square:hover {
   color: #1c1d1e;
 }
+
 /*End about*/
 
 /*Start services*/
 .my-skills {
   margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 2.5rem;
+  text-align: center;
 }
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.skill h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 2rem -2px 2rem 0;
+}
+
+.icon-container {
+  width: 10rem;
+  height: 10rem;
+  border: 3px solid #ffe838;
+  background-color: #fd57bf;
+  margin-bottom: 2rem;
+  display: flex;
+  transform: rotate(45deg);
+}
+
+.icon-container i {
+  color: #ffe838;
+  font-size: 5rem;
+  margin: auto;
+  transform: rotate(-45deg);
+}
+
 /*End services*/
 
 /*Start portfolio*/
+
+.portfolio-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.portfolio-item:last-child {
+  margin-bottom: 0;
+}
+
+.profile-img {
+  flex: 1;
+}
+
+.portfolio-description {
+  flex: 1;
+}
+
+.portfolio-description h6 {
+  flex: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  opacity: 0.3;
+}
+
 /*End services*/
 
 /*Start timeline*/
