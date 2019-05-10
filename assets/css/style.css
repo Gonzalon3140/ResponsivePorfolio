@@ -335,8 +335,12 @@ li {
   flex: 1;
 }
 
-.portfolio-description {
-  flex: 1;
+.portfolio-description {}
+
+.portfolio-description h1 {
+  flex: 3rem;
+  font-weight: 300;
+  margin: 1rem 0;
 }
 
 .portfolio-description h6 {
@@ -346,9 +350,79 @@ li {
   opacity: 0.3;
 }
 
+.portfolio-description .cta {
+  display: inline-block;
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #3883ff;
+  transition: color 650ms;
+}
+
+.portfolio-description .cta:hover {
+  color: #2f67cd;
+}
+
 /*End services*/
 
 /*Start timeline*/
+.timeline ul {
+  border-left: 4px solid #ffe838;
+  border-radius: .8rem;
+  background-color: rgba(0, 0, 0, 0.05);
+  margin: 0 auto;
+  position: relative;
+  padding: 5rem;
+  list-style: none;
+  text-align: left;
+  width: 70%;
+}
+
+.timeline h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  opacity: .3;
+}
+
+.timeline .date {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.timeline .date:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+
+.timeline .date::before,
+.timeline .date::after {
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.timeline .date::before {
+  content: attr(data-date);
+  left: -21rem;
+  text-align: right;
+  min-width: 12rem;
+  font-size: 1.5rem;
+}
+
+.timeline .date::after {
+  content: '';
+  box-shadow: 0 0 0 4px #fd57bf;
+  border-radius: 100%;
+  left: -7.7rem;
+  height: 1.5rem
+}
+
 /*End timeline*/
 
 /*Start contact*/
