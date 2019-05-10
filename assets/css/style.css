@@ -18,6 +18,10 @@ body {
   background-size: cover;
 }
 
+section {
+  padding: 6rem;
+}
+
 a {
   text-decoration: none;
   color: #eee;
@@ -45,7 +49,7 @@ img {
 
 .section-heading {
   text-align: center;
-  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
 .section-heading h1 {
@@ -83,6 +87,10 @@ img {
 .section-heading h6 {
   font-size: 1.6rem;
   font-weight: 300;
+}
+
+.has-margin-right {
+  margin-right: 5rem;
 }
 
 /*End reusable*/
@@ -323,6 +331,7 @@ li {
 }
 
 .profile-img {
+  width: 50rem;
   flex: 1;
 }
 
